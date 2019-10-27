@@ -14,23 +14,20 @@ r		 = radius roda
 R		 = radius robot (jarak roda berseberangan)
 '''
 
-Vx = input("Vx : ")
-Vy = input("Vy : ")
-theta = input("theta : ");
-thetadif = input("thetadif : ")
-r=1; R=20;
-
-
-if(Vx==0):
-	Vx=0.000000000000001
-
-#4 persamaan roda w1,w2,w3,w4
-w1 = (-Vx*math.sin(theta+math.pi/4) + Vy*math.cos(theta+math.pi/4) + thetadif*R)/r
-w2 = (-Vx*math.sin(theta+3*math.pi/4) + Vy*math.cos(theta+3*math.pi/4) + thetadif*R)/r
-w3 = (-Vx*math.sin(theta+5*math.pi/4) + Vy*math.cos(theta+5*math.pi/4) + thetadif*R)/r
-w4 = (-Vx*math.sin(theta+7*math.pi/4) + Vy*math.cos(theta+7*math.pi/4) + thetadif*R)/r
-
-print("w1 = ",w1);
-print("w2 = ",w2);
-print("w3 = ",w3);
-print("w4 = ",w4);
+while(1>0):
+	Vx = input("Vx : ")
+	Vy = input("Vy : ")
+	theta = input("theta : ");
+	thetadif = input("thetadif : ")
+	r=1; R=20;
+	if(Vx==0):
+		Vx=0.000000000000001
+	w1 = (-Vx*math.sin(theta+math.pi/4) + Vy*math.cos(theta+math.pi/4) + thetadif*R)/r
+	w2 = (-Vx*math.sin(theta+3*math.pi/4) + Vy*math.cos(theta+3*math.pi/4) + thetadif*R)/r
+	w3 = (-Vx*math.sin(theta+5*math.pi/4) + Vy*math.cos(theta+5*math.pi/4) + thetadif*R)/r
+	w4 = (-Vx*math.sin(theta+7*math.pi/4) + Vy*math.cos(theta+7*math.pi/4) + thetadif*R)/r
+	print("w1 = ",w1)
+	print("w2 = ",w2)
+	print("w3 = ",w3)
+	print("w4 = ",w4)
+	print("");
