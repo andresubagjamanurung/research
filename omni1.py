@@ -21,6 +21,7 @@ while(1>0):
 	thetadif = input("thetadif : ")
 	r=1; R=20;
 	theta=theta*math.pi/180;
+	thetadif=thetadif*math.pi/180;
 	if(Vx==0):
 		Vx=0.000000000000001
 	w1 = (-Vx*math.sin(theta+math.pi/4) + Vy*math.cos(theta+math.pi/4) + thetadif*R)/r
